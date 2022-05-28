@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "es2017",
     "useDefineForClassFields": true,
     "lib": [
       "DOM",
       "DOM.Iterable",
-      "ESNext"
+      "esnext"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -14,19 +14,17 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "esnext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+  "include": ["src", "jest.setup.js"],
+  // "references": [
+  //   {
+  //     "path": "./tsconfig.node.json"
+  //   }
+  // ]
 }
