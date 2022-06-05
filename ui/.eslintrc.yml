@@ -12,6 +12,7 @@ extends:
   - 'prettier'
 ignorePatterns:
   - 'vite.config.ts'
+  - '**/stories/'
 overrides:
   - files:
     - '**/__tests__/**/*.+(ts|tsx|js)'
@@ -30,15 +31,13 @@ parserOptions:
   ecmaFeatures:
     jsx: true
   ecmaVersion: 'latest'
-  project: 'tsconfig.eslint.json'
-  tsconfigRootDir: __dirname
+  project: './tsconfig.eslint.json'
   sourceType: 'module'
 plugins:
   - '@typescript-eslint'
   - '@typescript-eslint/eslint-plugin'
   - 'eslint-plugin-react'
   - 'eslint-plugin-import'
-  - 'eslint-plugin-jsx-ally'
   - 'eslint-plugin-react-hooks'
   - 'prefer-arrow'
   - 'react'
@@ -48,3 +47,5 @@ plugins:
   - 'testing-library'
 rules:
   react/react-in-jsx-scope: off
+  react-hooks/rules-of-hooks: error
+  react-hooks/exhaustive-deps: warn

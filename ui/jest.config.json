@@ -7,9 +7,27 @@
     "**/__tests__/**/*.+(ts|tsx|js)",
     "**/?(*.)+(spec|test).+(ts|tsx|js)"
   ],
-  "testPathIgnorePatterns": ["/node_modules/"],
   "transform": {
-    "^.+\\.(ts|tsx)$": "ts-jest"
+    "^.+\\.(ts|tsx)$": [
+      "@swc/jest",
+      {
+        "sourceMaps": "inline",
+        "module": {
+          "type": "commonjs"
+        },
+        "jsc": {
+          "parser": {
+            "syntax": "typescript",
+            "tsx": true
+          },
+          "transform": {
+            "react": {
+              "runtime": "automatic"
+            }
+          }
+        }
+      }
+    ]
   },
   "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
   "verbose": true
