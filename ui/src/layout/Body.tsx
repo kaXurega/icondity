@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from '../components/image';
 import Form from '../components/form';
 import './Body.scss';
