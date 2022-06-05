@@ -1,6 +1,6 @@
-import Header from './Layout/Header';
-import Body from './Layout/Body';
-import Footer from './Layout/Footer';
+import Header from './layout/Header';
+import Body from './layout/Body';
+import Footer from './layout/Footer';
 import './App.scss';
 
 const App = () => {
