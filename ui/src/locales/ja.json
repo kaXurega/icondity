@@ -1,0 +1,11 @@
+{
+  "body": {
+    "text": "Twitterのユーザーネームを入力してください!",
+    "title": "ユーザーネーム",
+    "generate": "icondityを作成",
+    "required": "ユーザーネームは入力必須です。",
+    "pattern": "正しいTwitterのユーザーネームを入力してください。",
+    "maxLength": "ユーザーネームは16文字以内です。",
+    "minLength": "ユーザーネームは5文字以上です。"
+  }
+}

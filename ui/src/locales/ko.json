@@ -1,0 +1,11 @@
+{
+  "body": {
+    "text": "Twitter의 유저 네임을 입력해 주세요!",
+    "title": "유저 네임",
+    "generate": "icondity를 작성",
+    "required": "유저 네임은 입력 필수입니다.",
+    "pattern": "올바른 Twitter의 유저 네임을 입력해 주세요.",
+    "maxLength": "유저 네임은 16문자 이내입니다.",
+    "minLength": "유저 네임은 5문자 이상입니다."
+  }
+}
