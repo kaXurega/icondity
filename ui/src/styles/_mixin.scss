@@ -1,5 +1,6 @@
 $breakpoints: (
-  'sm': 'screen and (max-width: 767px)',
+  'xsm': 'screen and (max-width: 499px)',
+  'sm': 'screen and (min-width: 500px)',
   'md': 'screen and (min-width: 768px)',
   'lg': 'screen and (min-width: 992px)',
   'xl': 'screen and (min-width: 1200px)',
