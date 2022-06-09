@@ -5,7 +5,7 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header>
       <Logo />
       <Buttons />
     </header>

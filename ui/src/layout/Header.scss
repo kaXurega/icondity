@@ -1,113 +1,135 @@
 @import '../styles/mixin';
 @import '../styles/variables';
 
-.header {
+header {
+  background-color: var(--background-color);
   position: fixed;
   display: flex;
   top: 0;
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
   z-index: 10;
-}
 
-.logo {
-  display: inline-block;
-  width: 50%;
-  margin: 20px 0%;
+  .logo {
+    display: inline-block;
+    margin-top: 20px;
 
-  @include mq(md) {
-    font-size: 32px;
-    line-height: 28px;
-  }
-
-  @include mq(lg) {
-    font-size: 36px;
-    line-height: 38px;
-  }
-
-  @include mq(xl) {
-    font-size: 42px;
-    line-height: 48px;
-  }
-  
-  @include mq(xxl) {
-    font-size: 48px;
-    line-height: 58px;
-  }
-}
-
-.buttons {
-  text-align: right;
-  width: 50%;
-
-  button {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .icon {
-    background-color: transparent;
-    color: $icon-color;
-    cursor: pointer;
-    border: none;
-    border-radius: $border-radius;
-    transition: all 0.3s ease;
+    @include mq(xsm) {
+      font-size: 24px;
+      margin-left: 5%;
+    }
 
     @include mq(sm) {
-      display: none;
+      font-size: 32px;
+      line-height: 38px;
     }
 
     @include mq(md) {
-      width: 40px;
-      height: 40px;
-      margin-top: 20px;
+      font-size: 34px;
     }
 
     @include mq(lg) {
-      width: 45px;
-      height: 45px;
-    }
-
-    &:hover {
-      background-color: var(--icon-background-color-hover);
-    }
-  }
-
-  .connectWallet {
-    background-color: $button-color;
-    cursor: pointer;
-    border: $button-border;
-    border-radius: $border-radius;
-    font-family: 'Open Sans';
-    font-weight: 500;
-    color: $button-text;
-    margin: 20px 0px 0px 10px;
-    transition: all 0.3s ease;
-
-    @include mq(sm) {
-      width: 120px;
-      height: 32px;
-      margin-top: 30px;
-    }
-
-    @include mq(md) {
-      width: 160px;
-      height: 38px;
-      font-size: 16px;
-    }
-
-    @include mq(lg) {
-      height: 40px;
+      font-size: 36px;
     }
 
     @include mq(xl) {
-      height: 42px;
+      font-size: 42px;
+      line-height: 48px;
+    }
+  
+    @include mq(xxl) {
+      font-size: 48px;
+      line-height: 58px;
+    }
+  }
+
+  .buttons {
+    text-align: right;
+
+    @include mq(xsm) {
+      margin-left: 10%;
     }
 
-    &:hover {
-      box-shadow: $button-shadow;
+    @include mq(sm) {
+      margin-left: 20%;
+    }
+
+    button {
+      @include mq(sm) {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    .icon {
+      background-color: transparent;
+      color: $icon-color;
+      cursor: pointer;
+      border: none;
+      border-radius: $border-radius;
+      transition: all 0.3s ease;
+
+      @include mq(xsm) {
+        display: none;
+      }
+
+      @include mq(sm) {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+      }
+
+      @include mq(lg) {
+        width: 45px;
+        height: 45px;
+        margin-top: 20px;
+      }
+
+      &:hover {
+        background-color: var(--icon-background-color-hover);
+      }
+    }
+
+    .connectWallet {
+      background-color: $button-color;
+      cursor: pointer;
+      border: $button-border;
+      border-radius: $border-radius;
+      font-family: 'Open Sans';
+      font-weight: 500;
+      color: $button-text;
+      margin: 20px 0px 0px 10px;
+      transition: all 0.3s ease;
+
+      @include mq(xsm) {
+        width: 140px;
+        height: 35px;
+      }
+
+      @include mq(sm) {
+        width: 140px;
+        height: 36px;
+      }
+
+      @include mq(md) {
+        width: 160px;
+        height: 38px;
+        font-size: 16px;
+      }
+
+      @include mq(lg) {
+        height: 40px;
+      }
+
+      @include mq(xl) {
+        height: 42px;
+      }
+
+      &:hover {
+        box-shadow: $button-shadow;
+      }
     }
   }
 }
