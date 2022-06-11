@@ -1,0 +1,66 @@
+// theme-variables
+$background-light: #ffffff !default;
+$background-dark: #272332 !default;
+$main-text-light: #444444 !default;
+$main-text-dark: #e3ddf1 !default;
+$icon-background-hover-light: #f4f1ff !default;
+$icon-background-hover-dark: #443c63 !default;
+$modal-boxshadow-light: 0px 5px 10px 0px #aaaaaa !default;
+$modal-boxshadow-dark: 0px 5px 10px 0px #111111 !default;
+$modal-lang-border-light: 1px solid #aaaaaa !default;
+$modal-lang-border-hover-light: 1px solid #777777 !default;
+$modal-lang-border-dark: 1px solid #555555 !default;
+$modal-lang-border-hover-dark: 1px solid #999999 !default;
+$form-background-color-light: #f6f4ff !default;
+$form-background-color-dark: #373342 !default;
+$form-boxshadow-light: -2px 2px 5px #aaaaaa inset, 2px -2px 10px #fefefe inset !default;
+$form-boxshadow-dark: -2px 2px 5px #443c63 inset, 2px, -2px, 10px #443c63 inset !default;
+$textbox-background-light: #fdfbff !default;
+$textbox-background-dark: #2e2a3a !default;
+$error-light: #ff0000 !default;
+$error-dark: #ff9999 !default;
+$footer-text-hover-light: #444444 !default;
+$footer-text-hover-dark: #cccccc !default;
+
+// variables
+$icon-color: #777777 !default;
+$modal-radius: 30px !default;
+$textbox-shadow-hover: 2px 2px 4px #aaaaaa inset, -2px -2px 4px #fefefe inset !default;
+$placeholder-text: #dddddd !default;
+$button-color: #6f4cff !default;
+$button-border: 1px solid $button-color !default;
+$button-hover: rgba(111, 76, 255, 0.5) !default;
+$button-shadow: $button-hover 0px 0px 20px 0px !default;
+$button-text: #fefefe !default;
+$footer-text: #777777 !default;
+$border-radius: 50px !default;
+
+:root {
+  // light-theme
+  --background-color-light-theme: #{$background-light};
+  --font-color-light-theme: #{$main-text-light};
+  --icon-background-color-hover-light-theme: #{$icon-background-hover-light};
+  --modal-background-color-light-theme: #{$background-light};
+  --modal-boxshadow-light-theme: #{$modal-boxshadow-light};
+  --modal-lang-border-light-theme: #{$modal-lang-border-light};
+  --modal-lang-border-hover-light-theme: #{$modal-lang-border-hover-light};
+  --form-background-color-light-theme: #{$form-background-color-light};
+  --form-boxshadow-light-theme: #{$form-boxshadow-light};
+  --textbox-background-color-light-theme: #{$textbox-background-light};
+  --error-light-theme: #{$error-light};
+  --footer-text-hover-light-theme: #{$footer-text-hover-light};
+
+  // dark-theme
+  --background-color-dark-theme: #{$background-dark};
+  --font-color-dark-theme: #{$main-text-dark};
+  --icon-background-color-hover-dark-theme: #{$icon-background-hover-dark};
+  --modal-background-color-dark-theme: #{$background-dark};
+  --modal-boxshadow-dark-theme: #{$modal-boxshadow-dark};
+  --modal-lang-border-dark-theme: #{$modal-lang-border-dark};
+  --modal-lang-border-hover-dark-theme: #{$modal-lang-border-hover-dark};
+  --form-background-color-dark-theme: #{$form-background-color-dark};
+  --form-boxshadow-dark-theme: #{$form-boxshadow-dark};
+  --textbox-background-color-dark-theme: #{$textbox-background-dark};
+  --error-dark-theme: #{$error-dark};
+  --footer-text-hover-dark-theme: #{$footer-text-hover-dark};
+}

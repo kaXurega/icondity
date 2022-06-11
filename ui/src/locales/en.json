@@ -1,0 +1,11 @@
+{
+  "body": {
+    "text": "Enter your Twitter username!",
+    "title": "username",
+    "generate": "Generate icondity",
+    "required": "This field is required.",
+    "pattern": "Please enter the correct Twitter username.",
+    "maxLength": "username must be max 16 characters long.",
+    "minLength": "username must be least 5 characters long."
+  }
+}

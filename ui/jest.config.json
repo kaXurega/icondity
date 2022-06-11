@@ -1,0 +1,16 @@
+{
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "testEnvironment": "jsdom",
+  "moduleFileExtensions": ["js","jsx","ts","tsx"],
+  "testMatch": [
+    "**/__tests__/**/*.+(ts|tsx|js)",
+    "**/?(*.)+(spec|test).+(ts|tsx|js)"
+  ],
+  "transform": {
+    "^.+\\.(ts|tsx)$": "@swc/jest",
+    "^.+\\.(css|scss)$": "jest-transform-stub"
+  },
+  "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"]
+}

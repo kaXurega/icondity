@@ -1,0 +1,243 @@
+@import '../styles/mixin';
+@import '../styles/variables';
+
+header {
+  background-color: var(--background-color);
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  z-index: 10;
+
+  .logo {
+    display: inline-block;
+    margin-top: 20px;
+
+    @include mq(xsm) {
+      font-size: 24px;
+      margin-left: 5%;
+    }
+
+    @include mq(sm) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    @include mq(md) {
+      font-size: 34px;
+    }
+
+    @include mq(lg) {
+      font-size: 36px;
+    }
+
+    @include mq(xl) {
+      font-size: 42px;
+      line-height: 48px;
+    }
+  
+    @include mq(xxl) {
+      font-size: 48px;
+      line-height: 58px;
+    }
+  }
+
+  .buttons {
+    text-align: right;
+
+    @include mq(xsm) {
+      margin-left: 10%;
+    }
+
+    @include mq(sm) {
+      margin-left: 20%;
+    }
+
+    button {
+      @include mq(sm) {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    .icon {
+      background-color: transparent;
+      color: $icon-color;
+      cursor: pointer;
+      border: none;
+      border-radius: $border-radius;
+      transition: all 0.3s ease;
+
+      @include mq(xsm) {
+        display: none;
+      }
+
+      @include mq(sm) {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+      }
+
+      @include mq(lg) {
+        width: 45px;
+        height: 45px;
+        margin-top: 20px;
+      }
+
+      &:hover {
+        background-color: var(--icon-background-color-hover);
+      }
+    }
+
+    .connectWallet {
+      background-color: $button-color;
+      cursor: pointer;
+      border: $button-border;
+      border-radius: $border-radius;
+      font-family: 'Open Sans';
+      font-weight: 500;
+      color: $button-text;
+      margin: 20px 0px 0px 10px;
+      transition: all 0.3s ease;
+
+      @include mq(xsm) {
+        width: 140px;
+        height: 35px;
+      }
+
+      @include mq(sm) {
+        width: 140px;
+        height: 36px;
+      }
+
+      @include mq(md) {
+        width: 160px;
+        height: 38px;
+        font-size: 16px;
+      }
+
+      @include mq(lg) {
+        height: 40px;
+      }
+
+      @include mq(xl) {
+        height: 42px;
+      }
+
+      &:hover {
+        box-shadow: $button-shadow;
+      }
+    }
+  }
+}
+
+// Modal
+.overlay-base {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  outline: 0;
+  transition-property: background-colro, opacity;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  z-index: 10;
+}
+
+.overlay-after {
+  background-color: transparent;
+  opacity: 1;
+  z-index: 10;
+}
+
+.overlay-before {
+  background-color: transparent;
+  opacity: 0;
+  z-index: 10;
+}
+
+.content-base {
+  position: relative;
+  background-color: var(--modal-background-color);
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  outline: 0;
+  height: 200px;
+  width: 200px;
+  border-radius: $modal-radius;
+  box-shadow: var(--modal-boxshadow);
+  transition-property: background-color, width, height;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  z-index: 10;
+}
+
+.content-after {
+  background-color: var(--modal-background-color);
+  width: 350px;
+  height: 350px;
+  border-radius: $modal-radius;
+  box-shadow: var(--modal-boxshadow);
+  z-index: 10;
+}
+
+.content-before {
+  background-color: var(--modal-background-color);
+  width: 200px;
+  height: 200px;
+  border-radius: $modal-radius;
+  box-shadow: var(--modal-boxshadow);
+  z-index: 10;
+}
+
+.modal-title {
+  position: absolute;
+  top: 20px;
+  font-size: 22px;
+
+  @include mq(md) {
+    font-size: 24px;
+  }
+}
+
+.modal-lang {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  .lang {
+    background-color: transparent;
+    border: var(--modal-lang-border);
+    border-radius: $border-radius;
+    width: 150px;
+    height: 50px;
+    margin: 5px 0;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--font-color);
+
+    &:hover {
+      border: var(--modal-lang-border-hover);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "icondity-server",
+  "version": "0.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "twitter-api-v2": "^1.12.2"
+  }
+}
