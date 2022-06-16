@@ -4,6 +4,7 @@ import env from 'vite-plugin-env-compatible';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  root: 'src',
   server: {
     open: true
   },
@@ -12,6 +13,9 @@ export default defineConfig({
     env({ prefix: "VITE", mountedPath: "process.env" })
   ],
   build: {
-    outDir: "dist",
+    outDir: "../dist",
+    manifest: true,
   },
+  publicDir: '../public',
+  assetsInclude: ['robots.txt'],
 });
