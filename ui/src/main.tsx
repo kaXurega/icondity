@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { RecoilRoot } from 'recoil';
+// import { RecoilRoot } from 'recoil';
 import { ThemeProvider } from './components/theme';
 import './locales/i18n';
-import './index.css';
+import './index.scss';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <RecoilRoot>
+  // <React.StrictMode>
+    // <RecoilRoot>
       <ThemeProvider>
         <App />
       </ThemeProvider>
-    </RecoilRoot>
-  </React.StrictMode>
+    // </RecoilRoot>
+  // </React.StrictMode>
 );
